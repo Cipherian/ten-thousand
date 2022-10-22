@@ -44,10 +44,12 @@
 *Returning the total score*
 
 
+
+
 ---
 
 ## Change Log
 ***[The change log will list any changes made to the code base. This includes any changes from TA/Instructor feedback]***  
 1.0: *Completed initial Project Featured Tasks* - 19 Oct 2022
-
+2.0: *Completed secondary Project feature t
 ---
