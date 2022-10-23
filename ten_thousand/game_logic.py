@@ -72,6 +72,7 @@ def calculate_round_score(play_input, dice_results_list):
     print(f'You have {round_score} unbanked points and {len(dice_results_list)} dice remaining')
     return round_score, tuple(dice_results_list)
 
+
 if __name__ == '__main__':
     print('Welcome to Ten Thousand'
           '\n(y)es to play or (n)o to decline')
@@ -112,7 +113,6 @@ if __name__ == '__main__':
                 #     current_round +=1
                 elif game_input == 'q':
                     play_game = False
-
 
         print(f'Thanks for playing. You earned {total_score} points')
 
