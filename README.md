@@ -43,13 +43,36 @@
 *Else if statement to check if three or more dice are matching and will calculate the points and add to the total*
 *Returning the total score*
 
+---
 
+### Game Directions
 
+1. Create virtual environment
 
+    ```python
+python3 -m venv .venv
+source ./.venv/bin/activate
+    ```
+   
+2. User follows input prompts from dice game to store points earned per round through option to bank, roll again or quit game. Returns total points earned prior to quitting.
+
+    ```python
+
+python3 ten_thousand/game_logic.py
+
+    ```
+
+3. deactivate virtual environment
+
+    ```python
+
+deactivate
+
+    ```
 ---
 
 ## Change Log
 ***[The change log will list any changes made to the code base. This includes any changes from TA/Instructor feedback]***  
 1.0: *Completed initial Project Featured Tasks* - 19 Oct 2022
-2.0: *Completed secondary Project feature t
+1.1: *Completed Project Feature Tasks* - 22 Oct 2022
 ---
