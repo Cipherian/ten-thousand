@@ -52,10 +52,10 @@ class GameLogic:
             return 1500
 
         for dice in dice_counter:
-            number = dice_counter[dice]
-            if number < 3:
-                total_score += GameLogic.dice_score[dice][1] * number
-            elif number >= 3:
-                total_score += GameLogic.dice_score[dice][3] * (number - 2)
+            dice_matched = dice_counter[dice]
+            if dice_matched < 3:
+                total_score += GameLogic.dice_score[dice][1] * dice_matched
+            elif dice_matched >= 3:
+                total_score += GameLogic.dice_score[dice][3] * (dice_matched - 2)
 
         return total_score
