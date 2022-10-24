@@ -59,12 +59,3 @@ class GameLogic:
                 total_score += GameLogic.dice_score[dice][3] * (number - 2)
 
         return total_score
-
-
-if __name__ == '__main__':
-    # print('ran directly as a module')
-    # print(GameLogic.calculate_score((5, 5, 5, 2, 2, 3)))
-    print(GameLogic.calculate_score((2, 2, 2)))
-    # to execute run: python -m ten_thousand.game_logic
-    # Executing without the -m "can" have a different import structure in certain aspects when doing multiple imports
-    # from different folders
