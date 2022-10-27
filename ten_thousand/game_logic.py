@@ -59,3 +59,24 @@ class GameLogic:
                 total_score += GameLogic.dice_score[dice][3] * (dice_matched - 2)
 
         return total_score
+
+    @staticmethod
+    def get_scorers(dice_roll):
+        dice_counter = Counter(dice_roll)
+        dice_that_score = []
+
+        for dice in dice_counter:
+            if GameLogic.dice_score[dice][1] != 0:
+                dice_that_score.append(dice)
+
+        return tuple(dice_that_score)
+
+    @staticmethod
+    def validate_keepers(roll, keepers):
+        roll_list = list(roll)
+        for keeper in keepers:
+            if keeper in roll_list:
+                roll_list.remove(keeper)
+            else:
+                return False
+        return True
