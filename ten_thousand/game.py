@@ -52,7 +52,6 @@ def start_game():
                 play_game = False
             else:
                 round_score, dice_results, hot_dice = calculate_round_score(play_input, dice_results_list)
-                print(f"Hot Dice: {hot_dice}")
                 if hot_dice is False:
                     dice_to_roll = len(dice_results)
                 print('(r)oll again, (b)ank your points or (q)uit:')
