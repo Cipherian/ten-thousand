@@ -89,4 +89,6 @@ deactivate
 
 2.0: *Completed Project Feature Tasks* - 22 Oct 2022
 
+3.0: *Version 3 Python test files passing* 27 Oct 2022
+
 ---
