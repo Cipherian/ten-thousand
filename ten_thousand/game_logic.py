@@ -74,6 +74,8 @@ class GameLogic:
     @staticmethod
     def validate_keepers(roll, keepers):
         roll_list = list(roll)
+        if len(GameLogic.get_scorers(roll)) == 0:
+            return False
         for keeper in keepers:
             if keeper in roll_list:
                 roll_list.remove(keeper)
